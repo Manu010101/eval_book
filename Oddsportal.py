@@ -13,7 +13,7 @@ from Glob import Glob
 
 
 # Pour construire et tracer histogramme
-def construit_histogramme(noms_tables: list[str], b_inf: float, b_sup: float) -> dict:
+def construit_histogramme(noms_tables, b_inf, b_sup):
     """
     - Se connecte à la base de données où sont stockées les données issues de Oddsportal
 
@@ -72,7 +72,7 @@ def construit_histogramme(noms_tables: list[str], b_inf: float, b_sup: float) ->
     return resultat
 
 
-def trace_histogramme(abcisse: list, ordonnees: list[list], titre="", titre_x="", titre_y="", sauvegarde_sous=None):
+def trace_histogramme(abcisse, ordonnees, titre="", titre_x="", titre_y="", sauvegarde_sous=None):
     """
     Trace l'histogramme
 
